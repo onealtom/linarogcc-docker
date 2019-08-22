@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 # copy in
 
 
-RUN wget https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/runtime-gcc-linaro-7.2.1-2017.11-arm-linux-gnueabihf.tar.xz -q && \
+RUN wget https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz -q && \
   mkdir -p /gccroot && \
   tar -xvJf gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz --strip-components 1 -C /gccroot && \
   rm -rf /gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
